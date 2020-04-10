@@ -1,0 +1,16 @@
+.parent {
+  background-color: aqua;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-parent {
+  display: flex;
+}
+
+.button1 {
+  margin-right: 50px;
+}

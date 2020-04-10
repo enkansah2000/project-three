@@ -1,8 +1,14 @@
 import React from "react";
+import { Button, Form } from "react-bootstrap";
+import livingroom from "../../images/livingroom.jpg";
 import "./Login.css";
+
+const myStyle = {
+  backgroundImage: `url(${livingroom})`,
+};
 const LoginForm = () => {
   return (
-    <div>
+    <div style={myStyle}>
       <div class="background">
         <div class="container">
           <div class="button">
@@ -32,13 +38,9 @@ const LoginForm = () => {
                                     <span class="input-item">
                                       <i class="fa fa-user-circle"></i>
                                     </span>
-
-                                    <input
-                                      class="form-input"
-                                      id="txt-input"
-                                      type="text"
-                                      placeholder="Email"
-                                      required
+                                    <Form.Control
+                                      type="email"
+                                      placeholder="Enter email"
                                     />
 
                                     <br />
@@ -47,15 +49,10 @@ const LoginForm = () => {
                                       <i class="fa fa-key"></i>
                                     </span>
 
-                                    <input
-                                      class="form-input"
+                                    <Form.Control
                                       type="password"
-                                      placeholder="Password"
-                                      id="pwd"
-                                      name="password"
-                                      required
+                                      placeholder="Enter Password"
                                     />
-
                                     <span>
                                       <i
                                         class="fa fa-eye"
@@ -66,7 +63,7 @@ const LoginForm = () => {
 
                                     <br />
 
-                                    <button class="log-in">Log In</button>
+                                    <Button variant="primary">Login</Button>
                                   </div>
 
                                   <div class="other">
