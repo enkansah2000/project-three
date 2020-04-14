@@ -1,5 +1,4 @@
 import React from "react";
-import livlivingroom from "../../images/livingroom.jpg";
 import "./Register.css";
 const SignUp = () => {
   return (
