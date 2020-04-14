@@ -1,14 +1,14 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
 import livingroom from "../../images/livingroom.jpg";
-import "./Login.css";
+import "./Contact.css";
 
 const myStyle = {
   backgroundImage: `url(${livingroom})`,
 };
-const LoginForm = () => {
+const Contact = () => {
   return (
-    <div className="login_bg">
+    <div className="contact_bg">
       <div className="background">
         <div class="container">
           <div class="button">
@@ -26,58 +26,34 @@ const LoginForm = () => {
                               <form>
                                 <div class="con">
                                   <div class="head-form">
-                                    <h2>Log In</h2>
-
-                                    <p>
-                                      login here using your Email and password
-                                    </p>
+                                    <h2>SEND ME A MESSAGE</h2>
                                   </div>
 
                                   <br />
                                   <div class="field-set">
-                                    <span class="input-item">
-                                      <i class="fa fa-user-circle"></i>
-                                    </span>
+                                    <Form.Control
+                                      type="text"
+                                      placeholder="Your name"
+                                    />
+
+                                    <br />
+
                                     <Form.Control
                                       type="email"
-                                      placeholder="Enter email"
+                                      placeholder="Your Email"
                                     />
 
                                     <br />
-
-                                    <span class="input-item">
-                                      <i class="fa fa-key"></i>
-                                    </span>
-
                                     <Form.Control
-                                      type="password"
-                                      placeholder="Enter Password"
+                                      type="text"
+                                      placeholder="Your Subject"
                                     />
-                                    <span>
-                                      <i
-                                        class="fa fa-eye"
-                                        aria-hidden="true"
-                                        type="button"
-                                        id="eye"></i>
-                                    </span>
-
-                                    <br />
-
-                                    <Button variant="primary">Login</Button>
+                                    <Form.Control as="textarea" rows="3" />
+                                    <Button variant="primary">Send</Button>
+                                    <Button variant="warning">Home</Button>
                                   </div>
 
-                                  <div class="other">
-                                    <button class="btn submits frgt-pass">
-                                      Forgot Password
-                                    </button>
-
-                                    <button class="btn submits sign-up">
-                                      Sign Up
-                                      <i
-                                        class="fa fa-user-plus"
-                                        aria-hidden="true"></i>
-                                    </button>
-                                  </div>
+                                  <div class="other"></div>
                                 </div>
                               </form>
                             </div>
@@ -101,4 +77,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default Contact;

@@ -18,6 +18,19 @@ const MyNavbar = () => {
           <Nav.Link style={{ color: "#f5f6fa" }}>
             <Link to="/register">Register</Link>
           </Nav.Link>
+
+          <Nav.Link style={{ color: "#f5f6fa" }}>
+            <Link to="/about">About</Link>
+          </Nav.Link>
+          <Nav.Link style={{ color: "#f5f6fa" }}>
+            <Link to="/buy">Buy</Link>
+          </Nav.Link>
+          <Nav.Link style={{ color: "#f5f6fa" }}>
+            <Link to="/faq">FAQ</Link>
+          </Nav.Link>
+          <Nav.Link style={{ color: "#f5f6fa" }}>
+            <Link to="/contact">Contact</Link>
+          </Nav.Link>
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
