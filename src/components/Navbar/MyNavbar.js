@@ -9,28 +9,32 @@ const MyNavbar = () => {
           Project-3
         </Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link style={{ color: "#e1b12c" }}>
-            <Link to="/">Home</Link>
-          </Nav.Link>
-          <Nav.Link style={{ color: "#f5f6fa" }}>
-            <Link to="/login">Login</Link>
-          </Nav.Link>
-          <Nav.Link style={{ color: "#f5f6fa" }}>
-            <Link to="/register">Register</Link>
-          </Nav.Link>
+          <Link style={{ color: "#e1b12c", margin: "10px" }} to="/">
+            Home
+          </Link>
 
-          <Nav.Link style={{ color: "#f5f6fa" }}>
-            <Link to="/about">About</Link>
-          </Nav.Link>
-          <Nav.Link style={{ color: "#f5f6fa" }}>
-            <Link to="/buy">Buy</Link>
-          </Nav.Link>
-          <Nav.Link style={{ color: "#f5f6fa" }}>
-            <Link to="/faq">FAQ</Link>
-          </Nav.Link>
-          <Nav.Link style={{ color: "#f5f6fa" }}>
-            <Link to="/contact">Contact</Link>
-          </Nav.Link>
+          <Link style={{ color: "#e1b12c", margin: "10px" }} to="/login">
+            Login
+          </Link>
+
+          <Link style={{ color: "#e1b12c", margin: "10px" }} to="/register">
+            Register
+          </Link>
+
+          <Link style={{ color: "#e1b12c", margin: "10px" }} to="/about">
+            About
+          </Link>
+
+          <Link style={{ color: "#e1b12c", margin: "10px" }} to="/buy">
+            Buy
+          </Link>
+
+          <Link style={{ color: "#e1b12c", margin: "10px" }} to="/faq">
+            FAQ
+          </Link>
+          <Link style={{ color: "#e1b12c", margin: "10px" }} to="/contact">
+            Contact
+          </Link>
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
