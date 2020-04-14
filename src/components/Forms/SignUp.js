@@ -1,11 +1,9 @@
 import React from "react";
 import livlivingroom from "../../images/livingroom.jpg";
-const myStyle = {
-  backgroundImage: `url(${livlivingroom})`,
-};
+import "./Register.css";
 const SignUp = () => {
   return (
-    <div class="background" style={myStyle}>
+    <div className="register_bg">
       <div class="container">
         <div class="button">
           <section id="intro">
